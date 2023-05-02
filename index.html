@@ -57,7 +57,7 @@
                 let computerSelection = getComputerChoice();
                 
                 let play = playRound(playerSelection, computerSelection);
-
+                console.log(play);
                 if (play.includes("lost")){
                     computerScore += 1;
                 } else if (play.includes("won")){
