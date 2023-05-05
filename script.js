@@ -78,6 +78,11 @@ function pressButton(){
                 playerScore += 1;
             }
             scores.textContent = `Computer score: ${computerScore} & Player score: ${playerScore}`;
+            if (playerScore === 5 || computerScore === 5){
+                document.getElementById("rock").disabled = true;
+                document.getElementById("paper").disabled = true;
+                document.getElementById("scissors").disabled = true;
+            }
         });
     });
 }
